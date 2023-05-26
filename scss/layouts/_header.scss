@@ -1,5 +1,5 @@
 header {
-  box-shadow: 0 25px 25px $primary--color;
+  box-shadow: 0 25px 35px 20px $bgc--primary--color;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -8,13 +8,13 @@ header {
 }
 
 .header_container {
+
   width: 100%;
   padding-inline: 20px;
   display: flex;
   justify-content: space-between;
   a {
     color: $header--color;
-    font-family: $header--font;
   }
 }
 
@@ -26,12 +26,14 @@ header {
     display: flex;
     text-align: center;
     margin: 0;
+    font-family: $secondary--font;
+    text-transform: uppercase;
   }
 
   li {
     font-weight: bold;
-    font-size: 25px;
-    padding: 20px 20px;
+    font-size: 17px;
+    padding: 20px 10px;
     margin-inline: 20px;
     position: relative;
   }
@@ -44,7 +46,7 @@ header {
     width: 0;
     height: 4px;
     background-color: lightpink;
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     transform: translateX(-50%);
   }
 
@@ -54,6 +56,7 @@ header {
 }
 
 .header_logo {
+  font-family: $header--font;
   font-size: 60px;
   padding: 20px 15px 15px;
 }
@@ -85,7 +88,7 @@ header {
     height: 50vh;
     right: 0;
     padding-top: 40px;
-    background-color: #e4d9ff;
+    background-color: $bgc--primary--color;
     box-shadow: 3px 3px 10px gray;
     border-radius: 10px;
     z-index: 1;
@@ -96,7 +99,7 @@ header {
       padding: 0;
 
       li {
-        padding: 30px 25px;
+        padding: 15px 0px;
       }
     }
 

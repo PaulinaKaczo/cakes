@@ -22,13 +22,19 @@ function Header() {
               <a href="#hero">Strona Główna</a>
             </li>
             <li>
-              <a href="#about-me">About me</a>
+              <a href="#about-me">O mnie</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#gallery">Galeria</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#taste">Smaki</a>
+            </li>
+            <li>
+              <a href="#prices">Cennik</a>
+            </li>
+            <li>
+              <a href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>

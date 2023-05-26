@@ -1,0 +1,42 @@
+.hero_container {
+  background-image: url("../images/birthday-cake-blue-background.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero_wrapper {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(calc(35vh - 50px));
+  background-color: rgba(255, 255, 255, .5);
+  transition: .5s ease-out;
+}
+
+.hero_wrapper:hover{
+  box-shadow: 3px 3px 15px 15px #ababab;
+  width: 620px;
+  height: 320px;
+
+}
+
+
+.hero {
+  text-align: center;
+  font-family: $secondary--font;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 35px;
+    }
+  p {
+    font-size: 25px;
+  }
+
+}
