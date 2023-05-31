@@ -66,7 +66,7 @@ header {
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1255px) {
   .header_navigation {
     display: none;
   }
@@ -99,7 +99,7 @@ header {
       padding: 0;
 
       li {
-        padding: 15px 0px;
+        padding: 15px 0;
       }
     }
 
@@ -113,9 +113,40 @@ header {
     color: $header--color;
     content: "\f0c9";
     display: block;
-    top: -8px;
+    top: -3px;
     right: 55px;
     margin-bottom: 10px;
     font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .header_logo {
+    font-size: 50px;
+  }
+  .header_navigation li {
+    font-size: 16px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .header_logo {
+    font-size: 40px;
+  }
+  .hamburger::before {
+    position: absolute;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header_logo {
+    font-size: 30px;
+  }
+  .hamburger::before {
+    position: absolute;
+    font-size: 1.3rem;
+    top: -8px;
   }
 }

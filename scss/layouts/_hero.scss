@@ -8,7 +8,7 @@
 }
 
 .hero_wrapper {
-  width: 600px;
+  max-width: 600px;
   height: 300px;
   margin: 0 auto;
   display: flex;
@@ -23,7 +23,6 @@
   box-shadow: 3px 3px 15px 15px #ababab;
   width: 620px;
   height: 320px;
-
 }
 
 
@@ -40,3 +39,24 @@
   }
 
 }
+
+@media  only screen and (max-width: 660px){
+  .hero_wrapper{
+    margin: 40px 50px 40px 40px;
+  }
+
+    .hero_wrapper:hover{
+      width: calc(100% - 90px);
+    }
+
+  .hero {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}
+

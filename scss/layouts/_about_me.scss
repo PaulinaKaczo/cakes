@@ -1,0 +1,45 @@
+.about_me_container {
+  background-color: $bgc--secondary--color;
+  margin: 0 auto;
+}
+
+.about_me_wrapper {
+
+  padding: 100px;
+  font-family: $secondary--font;
+
+
+
+}
+
+.about_me_box {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 30px;
+  box-shadow: 1px 3px 20px #adadad;
+}
+
+.about_me_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about_me_text {
+  overflow-wrap: normal;
+  width: 600px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.my_photo {
+  width: 500px;
+  height: 400px;
+  background-color: pink;
+  border-radius: 30px;
+  align-self: center;
+}
+
+
