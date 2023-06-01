@@ -1,0 +1,43 @@
+.prices_wrapper {
+
+  padding: 25px 100px;
+  font-family: $secondary--font;
+
+  @media only screen and (max-width: 700px) {
+    padding:50px 25px 0;
+  }
+}
+
+.prices_box {
+}
+
+.prices_table {
+  margin: 0 auto;
+    border: 2px solid #888;
+    border-collapse: separate;
+    border-spacing: 4px;
+
+  th {
+    background-color: $bgc--secondary--color;
+  }
+
+      td, th {
+        border: 1px solid #aaa;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
+
+.prices_title {
+  text-align: center;
+}
+
+.prices_info {
+  text-align: justify;
+
+  li {
+    list-style-type: initial;
+  }
+}
+

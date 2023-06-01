@@ -1,8 +1,8 @@
 function AboutMe() {
   return (
-    <section id="about-me" className="about_me_container">
+    <section id="about-me" className="container">
       <div className="about_me_wrapper">
-        <div className="about_me_box">
+        <div className="box about_me_box">
           <div className="about_me_details">
             <div className="about_me_text">
               <h2>Miło mi, że tutaj jesteś!</h2>

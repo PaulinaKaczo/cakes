@@ -58,9 +58,9 @@ function Contact() {
   // };
 
   return (
-    <section id="contact" className="contact_container">
+    <section id="contact" className="container">
       <div className="contact_wrapper">
-        <div className="contact_box">
+        <div className="box contact_box">
           <div className="contact_box_text">
             <h2>Kontakt</h2>
             <p>Telefon:</p>
@@ -68,7 +68,7 @@ function Contact() {
               <strong>503-310-942</strong>
             </p>
             <p>E-mail:</p>
-            <p>ciochowe-ciacho@gmail.com</p>
+            <strong>ciochowe-ciacho@gmail.com</strong>
           </div>
 
           <form className="contact_form" onSubmit={handleSubmit}>
