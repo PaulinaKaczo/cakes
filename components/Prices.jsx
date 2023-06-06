@@ -16,27 +16,27 @@ function Prices() {
             </thead>
             <tbody>
               <tr>
-                <td>16 cm</td>
+                <td>Ø 16 cm</td>
                 <td>ok. 10 porcji</td>
                 <td>od 200 zł</td>
               </tr>
               <tr>
-                <td>18 cm</td>
+                <td>Ø 18 cm</td>
                 <td>ok. 15 porcji</td>
                 <td>od 260 zł</td>
               </tr>
               <tr>
-                <td>20 cm</td>
+                <td>Ø 20 cm</td>
                 <td>ok. 20 porcji</td>
                 <td>od 320 zł</td>
               </tr>
               <tr>
-                <td>22 cm</td>
+                <td>Ø 22 cm</td>
                 <td>ok. 25 porcji</td>
                 <td>od 380 zł</td>
               </tr>
               <tr>
-                <td>24 cm</td>
+                <td>Ø 24 cm</td>
                 <td>ok. 30 porcji</td>
                 <td>od 440 zł</td>
               </tr>

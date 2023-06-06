@@ -1,0 +1,67 @@
+.taste_details_container {
+  margin-top: 160px;
+  max-width: 1200px;
+}
+
+.taste_details_wrapper {
+  padding: 30px;
+  font-family: $secondary--font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.taste_list {
+margin-bottom: 50px;
+}
+
+.taste_item {
+  margin: 0 auto;
+  box-shadow: 2px 2px 15px grey;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 15px;
+  max-width: 950px;
+}
+
+.taste_item:nth-child(2n) {
+  margin-left: 50px;
+
+}
+.taste_item:nth-child(n+1) {
+  margin-right: 50px;
+
+}
+
+@media only screen and (max-width: 1129px){
+  .taste_item:nth-child(2n) {
+    margin-left: 0;
+
+  }
+  .taste_item:nth-child(n+1) {
+    margin-right: 0;
+
+  }
+}
+
+.taste_item_title {
+  font-weight: bold;
+}
+
+.back_btn {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid grey;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border-radius: 15px;
+  transition: all 0.5s ease-out;
+  font-weight: bold;
+
+  &:hover {
+    box-shadow: 2px 2px 15px grey;
+    padding: 10px 20px;
+    background-color: lightpink;
+  }
+}
+
