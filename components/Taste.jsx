@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Taste() {
   return (
     <section id="taste" className="container">
-      <div className="taste_wrapper">
+      <div className="wrapper taste_wrapper">
         <div className="box taste_box">
           <h2 className="taste_title">Smaki</h2>
           <p>

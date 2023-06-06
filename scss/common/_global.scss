@@ -1,10 +1,19 @@
 body {
   background-color: $bgc--secondary--color;
-
 }
 
 .container {
   margin: 0 auto;
+}
+
+.wrapper {
+
+  padding: 25px 100px;
+  font-family: $secondary--font;
+
+  @media only screen and (max-width: 700px) {
+    padding:25px 25px 0;
+  }
 }
 
 .box{

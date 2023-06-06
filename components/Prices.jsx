@@ -3,7 +3,7 @@ import React from "react";
 function Prices() {
   return (
     <section id="prices" className="container">
-      <div className="prices_wrapper">
+      <div className="wrapper prices_wrapper">
         <div className="box prices_box">
           <h2 className="prices_title">Cennik</h2>
           <table className="prices_table">

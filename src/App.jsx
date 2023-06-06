@@ -10,6 +10,7 @@ import Taste from "../components/Taste.jsx";
 import { Route, Routes } from "react-router-dom";
 import TasteDetails from "../components/TasteDetails.jsx";
 import React from "react";
+import Opinions from "../components/Opinions.jsx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Taste />
               <Prices />
               <Contact />
+              <Opinions />
               <Footer />
             </>
           }

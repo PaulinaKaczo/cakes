@@ -59,7 +59,7 @@ function Contact() {
 
   return (
     <section id="contact" className="container">
-      <div className="contact_wrapper">
+      <div className="wrapper contact_wrapper">
         <div className="box contact_box">
           <div className="contact_box_text">
             <h2>Kontakt</h2>
