@@ -30,7 +30,11 @@ function AboutMe() {
                 <strong>Gwarantuję! ;)</strong>
               </p>
             </div>
-            <img className="my_photo" src="#" alt="Moje zdjęcie" />
+            <img
+              className="my_photo"
+              src="../images/my_photo.jpg"
+              alt="Moje zdjęcie"
+            />
           </div>
         </div>
       </div>

@@ -22,17 +22,23 @@
 
 .about_me_text {
   overflow-wrap: normal;
-  //max-width: 600px;
   margin-right: 30px;
   text-align: justify;
 }
 
 .my_photo {
-  min-width: 300px;
-  height: 300px;
+  min-width: 350px;
+  height: 350px;
   background-color: pink;
   border-radius: 30px;
   align-self: center;
+
+  @media only screen and (max-width: 500px) {
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+    min-width: 0;
+  }
 }
 
 
