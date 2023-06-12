@@ -1,77 +1,71 @@
+import { useState } from "react";
+
 function Gallery() {
+  const galleryPictures = [
+    "../images/chrzest.jpg",
+    "../images/tort_urodzinowy.jpg",
+    "../images/wieczor_panienski.png",
+    "../images/tort_urodzinowy2.jpg",
+    "../images/tort_urodzinowy2_srodek.jpg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === galleryPictures.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  const goToPreviousSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? galleryPictures.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <section className="gallery_container">
       <div className="wrapper gallery_wrapper">
         <div className="box gallery_box">
           <h2 className="gallery_title">Galeria</h2>
 
-          <div id="carouselExample" className="carousel slide gallery_photos">
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src="../images/tort_urodzinowy.jpg"
-                  className="d-block w-100 gallery_img"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="../images/chrzest.jpg"
-                  className="d-block w-100 gallery_img"
-                  alt="..."
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="../images/wieczor_panienski.PNG"
-                  className="d-block w-100 gallery_img"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+          <div className="carousel gallery_photos">
+            <div className="carousel">
+              <button className="btn_change_slide" onClick={goToPreviousSlide}>
+                &#8249;
+              </button>
+              <img
+                className="gallery_img"
+                src={
+                  galleryPictures[
+                    currentIndex === 0
+                      ? galleryPictures.length - 1
+                      : currentIndex - 1
+                  ]
+                }
+                alt={`Cake nr ${currentIndex - 1}`}
+              />
+              <img
+                className="gallery_img"
+                src={galleryPictures[currentIndex]}
+                alt={`Cake nr ${currentIndex}`}
+              />
+              <img
+                className="gallery_img gallery_img--last"
+                src={
+                  galleryPictures[
+                    currentIndex + 1 === galleryPictures.length
+                      ? 0
+                      : currentIndex + 1
+                  ]
+                }
+                alt={`Cake nr ${currentIndex + 1}`}
+              />
 
-          {/*<div className="gallery_photos">*/}
-          {/*  <img*/}
-          {/*    className="gallery_img"*/}
-          {/*    src="../images/tort_urodzinowy.jpg"*/}
-          {/*    alt="Tort urodzinowy"*/}
-          {/*  />*/}
-          {/*  <img*/}
-          {/*    className="gallery_img"*/}
-          {/*    src="../images/chrzest.jpg"*/}
-          {/*    alt="Tort na chrzciny"*/}
-          {/*  />*/}
-          {/*  <img*/}
-          {/*    className="gallery_img gallery_img--last"*/}
-          {/*    src="../images/wieczor_panienski.PNG"*/}
-          {/*    alt="Tort na wieczór panieński"*/}
-          {/*  />*/}
-          {/*</div>*/}
+              <button className="btn_change_slide" onClick={goToNextSlide}>
+                &#8250;
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

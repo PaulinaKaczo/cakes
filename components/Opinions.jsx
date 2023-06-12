@@ -8,7 +8,7 @@ function Opinions() {
         <div className="box opinions_box">
           <h2 className="opinions_title"> Opinie </h2>
           <div className="opinions_item">
-            <p className="opinion_name"> X</p>
+            <p className="opinion_name"> Ania</p>
             <FontAwesomeIcon className="star_icon" icon={faStar} />
             <FontAwesomeIcon className="star_icon" icon={faStar} />
             <FontAwesomeIcon className="star_icon" icon={faStar} />
@@ -37,7 +37,7 @@ function Opinions() {
             </p>
           </div>
           <div className="opinions_item">
-            <p className="opinion_name"> X</p>
+            <p className="opinion_name"> Agnieszka</p>
             <FontAwesomeIcon className="star_icon" icon={faStar} />
             <FontAwesomeIcon className="star_icon" icon={faStar} />
             <FontAwesomeIcon className="star_icon" icon={faStar} />

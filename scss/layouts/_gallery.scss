@@ -1,23 +1,30 @@
 .gallery_img {
   width: 350px;
   margin-right: 30px;
-
 }
 
-//.gallery_img--last {
-//  margin-right: 0;
-//}
-//
-//.gallery_title {
-//  text-align: center;
-//}
-
-.gallery_photos {
-
+.gallery_img--last {
+  margin-right: 0;
 }
 
-.carousel-inner {
+.gallery_title {
+  text-align: center;
+}
+
+.carousel {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+
+}
+
+.btn_change_slide {
+  height: 40px;
+  width: 20px;
+  align-self: center;
+  margin-inline: 20px;
+  background-color: #def5fd;
+  border-radius: 5px;
+  border: 0.5px solid grey;
 }
