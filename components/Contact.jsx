@@ -65,10 +65,14 @@ function Contact() {
             <h2>Kontakt</h2>
             <p>Telefon:</p>
             <p>
-              <strong>503-310-942</strong>
+              <a href="tel:+48503310942">
+                <strong>503-310-942</strong>
+              </a>
             </p>
             <p>E-mail:</p>
-            <strong>ciochowe-ciacho@gmail.com</strong>
+            <a href="mailto:ciochowe-ciacho@gmail.com">
+              <strong>ciochowe-ciacho@gmail.com</strong>
+            </a>
           </div>
 
           <form className="contact_form" onSubmit={handleSubmit}>
