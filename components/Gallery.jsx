@@ -23,7 +23,7 @@ function Gallery() {
   };
 
   return (
-    <section className="gallery_container">
+    <section id="gallery" className="gallery_container">
       <div className="wrapper gallery_wrapper">
         <div className="box gallery_box">
           <h2 className="gallery_title">Galeria</h2>
