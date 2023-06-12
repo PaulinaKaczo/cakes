@@ -11,6 +11,8 @@ import { Route, Routes } from "react-router-dom";
 import TasteDetails from "../components/TasteDetails.jsx";
 import React from "react";
 import Opinions from "../components/Opinions.jsx";
+import Gallery from "../components/Gallery.jsx";
+import MessengerButton from "../components/MessengerButton.jsx";
 
 function App() {
   return (
@@ -22,9 +24,11 @@ function App() {
             <>
               <Header />
               <ScrollToTopButton />
+              <MessengerButton />
               <Hero />
               <AboutMe />
               <Taste />
+              <Gallery />
               <Prices />
               <Contact />
               <Opinions />
