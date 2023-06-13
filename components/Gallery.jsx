@@ -30,7 +30,10 @@ function Gallery() {
 
           <div className="carousel gallery_photos">
             <div className="carousel">
-              <button className="btn_change_slide" onClick={goToPreviousSlide}>
+              <button
+                className="btn_change_slide btn_change_slide--prev"
+                onClick={goToPreviousSlide}
+              >
                 &#8249;
               </button>
               <img
@@ -61,7 +64,10 @@ function Gallery() {
                 alt={`Cake nr ${currentIndex + 1}`}
               />
 
-              <button className="btn_change_slide" onClick={goToNextSlide}>
+              <button
+                className="btn_change_slide btn_change_slide--next"
+                onClick={goToNextSlide}
+              >
                 &#8250;
               </button>
             </div>
