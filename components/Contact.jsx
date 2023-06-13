@@ -1,8 +1,5 @@
 import { useState } from "react";
 import { Button, TextField } from "@mui/material";
-// import firebase from "firebase/app";
-// import "firebase/firestore";
-// import "firebase/functions";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -12,50 +9,16 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const subject = "Wiadomość z formularza kontaktowego";
+    const body = `Imię i nazwisko: ${name}\nEmail: ${email}\nNumer telefonu: ${number}\nWiadomość: ${message}`;
+
+    const mailtoUrl = `mailto:ciochowe-ciacho@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUrl;
   };
-  //   // Uzyskanie dostępu do kolekcji wiadomości w Firebase Firestore
-  //   const db = firebase.firestore();
-  //   const messagesRef = db.collection("messages");
-  //
-  //   // Dodanie nowej wiadomości do kolekcji
-  //   messagesRef
-  //     .add({
-  //       name: name,
-  //       email: email,
-  //       number: number,
-  //       message: message,
-  //       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-  //     })
-  //     .then(() => {
-  //       console.log("Wiadomość została zapisana w Firebase Firestore.");
-  //
-  //       // Wyczyszczenie pól formularza
-  //       setName("");
-  //       setEmail("");
-  //       setNumber("");
-  //       setMessage("");
-  //     })
-  //     .catch((error) => {
-  //       console.error("Wystąpił błąd podczas zapisywania wiadomości:", error);
-  //     });
-  //
-  //   // Wywołanie funkcji Firebase na serwerze do wysłania wiadomości e-mail
-  //   const sendContactEmail = firebase
-  //     .functions()
-  //     .httpsCallable("sendContactEmail");
-  //   sendContactEmail({
-  //     name: name,
-  //     email: email,
-  //     number: number,
-  //     message: message,
-  //   })
-  //     .then((result) => {
-  //       console.log("Wiadomość wysłana!", result);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Wystąpił błąd podczas wysyłania wiadomości:", error);
-  //     });
-  // };
 
   return (
     <section id="contact" className="container">
@@ -134,7 +97,7 @@ function Contact() {
               color="grey"
               size="small"
             />
-            <Button variant="contained" form="submit" color="grey">
+            <Button variant="contained" type="submit" color="grey">
               Wyślij
             </Button>
           </form>

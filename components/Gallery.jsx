@@ -4,7 +4,7 @@ function Gallery() {
   const galleryPictures = [
     "../images/chrzest.jpg",
     "../images/tort_urodzinowy.jpg",
-    "../images/wieczor_panienski.png",
+    "../images/wieczor_panienski.PNG",
     "../images/tort_urodzinowy2.jpg",
     "../images/tort_urodzinowy2_srodek.jpg",
   ];
