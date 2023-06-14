@@ -13,7 +13,7 @@ function Contact() {
     const subject = "Wiadomość z formularza kontaktowego";
     const body = `Imię i nazwisko: ${name}\nEmail: ${email}\nNumer telefonu: ${number}\nWiadomość: ${message}`;
 
-    const mailtoUrl = `mailto:ciochowe-ciacho@gmail.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:ciochowe.ciacho@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
@@ -33,8 +33,8 @@ function Contact() {
               </a>
             </p>
             <p>E-mail:</p>
-            <a href="mailto:ciochowe-ciacho@gmail.com">
-              <strong>ciochowe-ciacho@gmail.com</strong>
+            <a href="mailto:ciochowe.ciacho@gmail.com">
+              <strong>ciochowe.ciacho@gmail.com</strong>
             </a>
           </div>
 
