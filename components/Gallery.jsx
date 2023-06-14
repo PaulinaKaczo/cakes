@@ -10,6 +10,7 @@ function Gallery() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [biggerPicture, setBiggerPicture] = useState(false);
 
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -20,6 +21,19 @@ function Gallery() {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? galleryPictures.length - 1 : prevIndex - 1
     );
+  };
+
+  const openBiggerPicture = () => {
+    setBiggerPicture(true);
+  };
+
+  const closeBiggerPicture = () => {
+    setBiggerPicture(false);
+  };
+
+  const openSpecificBiggerPicture = (index) => {
+    setCurrentIndex(index);
+    setBiggerPicture(true);
   };
 
   return (
@@ -46,11 +60,13 @@ function Gallery() {
                   ]
                 }
                 alt={`Cake nr ${currentIndex - 1}`}
+                onClick={() => openSpecificBiggerPicture(currentIndex - 1)}
               />
               <img
                 className="gallery_img"
                 src={galleryPictures[currentIndex]}
                 alt={`Cake nr ${currentIndex}`}
+                onClick={() => openSpecificBiggerPicture(currentIndex)}
               />
               <img
                 className="gallery_img gallery_img--last"
@@ -62,6 +78,7 @@ function Gallery() {
                   ]
                 }
                 alt={`Cake nr ${currentIndex + 1}`}
+                onClick={() => openSpecificBiggerPicture(currentIndex + 1)}
               />
 
               <button
@@ -72,6 +89,15 @@ function Gallery() {
               </button>
             </div>
           </div>
+          {biggerPicture && (
+            <div className="image_big_container" onClick={closeBiggerPicture}>
+              <img
+                className="image_big"
+                src={galleryPictures[currentIndex]}
+                alt={`Cake nr ${currentIndex}`}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
